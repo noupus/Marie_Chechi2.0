@@ -18,7 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-ഹായ് {}, എന്റെ പേര് {}! ഞാൻ ടോറന്റ് സ്റ്റോർ അഡ്മിൻ ആണ്. 
+ഹായ് {}, എന്റെ പേര് {}!ഞാൻ ടോറന്റ് സ്റ്റോർ അഡ്മിൻ ആണ് . 
 
 """
 
