@@ -25,7 +25,6 @@ LOCK_TYPES = {'sticker': Filters.sticker,
               'video': Filters.video,
               'contact': Filters.contact,
               'photo': Filters.photo,
-              'invitelink : Filters.invitelink,
               'gif': Filters.document & CustomFilters.mime_type("video/mp4"),
               'url': Filters.entity(MessageEntity.URL) | Filters.caption_entity(MessageEntity.URL),
               'bots': Filters.status_update.new_chat_members,
@@ -253,14 +252,13 @@ def build_lock_message(chat_id):
                    "\n - video = `{}`" \
                    "\n - contact = `{}`" \
                    "\n - photo = `{}`" \
-                   "\n - invitelink = `{}`" \
                    "\n - gif = `{}`" \
                    "\n - url = `{}`" \
                    "\n - bots = `{}`" \
                    "\n - forward = `{}`" \
                    "\n - game = `{}`" \
                    "\n - location = `{}`".format(locks.sticker, locks.audio, locks.voice, locks.document,
-                                                 locks.video, locks.contact, locks.photo, locks.invitelink, locks.gif, locks.url,
+                                                 locks.video, locks.contact, locks.photo, locks.gif, locks.url,
                                                  locks.bots, locks.forward, locks.game, locks.location)
         if restr:
             res += "\n - messages = `{}`" \
